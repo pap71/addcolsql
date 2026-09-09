@@ -1,0 +1,20 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+DROP TABLE Cli;
+CREATE TABLE Cli (
+	Clefacc VARCHAR(12),
+	Type VARCHAR(2),
+	Add1 VARCHAR(50),
+	Add2 VARCHAR(50),
+	Add3 VARCHAR(50),
+	Pays VARCHAR(4),
+	Codpos VARCHAR(8),
+	Add4 VARCHAR(40),
+    Siret VARCHAR(16),
+	Datcre VARCHAR(12),
+	Datmod VARCHAR(12),
+	Tel VARCHAR(18),
+	Mail VARCHAR(40),
+	Notes BLOB
+);
+COMMIT;
